@@ -33,7 +33,8 @@ def main():
         for vacancy in vacancies:
             print(vacancy, end='\n')
 
-main()
+if __name__ == "__main__":
+    main()
 
 
 
