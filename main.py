@@ -33,12 +33,6 @@ def main():
         for vacancy in vacancies:
             print(vacancy, end='\n')
 
+
 if __name__ == "__main__":
     main()
-
-
-
-
-
-
-

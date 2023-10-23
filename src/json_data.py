@@ -1,5 +1,5 @@
 import json
-# from vacancy import Vacancy
+
 
 class JSONSaver:
     """
@@ -45,7 +45,7 @@ class Vacancy:
 
     def __str__(self):
         if not self.salary_from and not self.salary_to:
-            salary = f'Не указана'
+            salary = 'Не указана'
         else:
             salary_from, salary_to = '', ''
             if self.salary_from:
@@ -65,6 +65,3 @@ class Vacancy:
 
     def __le__(self, other):
         return self.salary_from <= other.salary_from
-
-
-

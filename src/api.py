@@ -1,6 +1,5 @@
 import requests
 from abc import ABC, abstractmethod
-import json
 
 
 class ApiClient(ABC):
@@ -78,7 +77,7 @@ class SuperJobAPI(ApiClient):
     """
     Класс для работы с API SuperJob: получает вакансии по запросу пользователя
     """
-    url="https://api.superjob.ru/2.0/vacancies/"
+    url = "https://api.superjob.ru/2.0/vacancies/"
 
     def __init__(self, keyword):
         self.keyword = keyword
@@ -125,9 +124,3 @@ class SuperJobAPI(ApiClient):
             }
             formatted_vacancies.append(formatted_vacancy)
         return formatted_vacancies
-
-
-
-
-
-
